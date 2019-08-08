@@ -37,6 +37,7 @@ import com.mapbox.mapboxsdk.maps.UiSettings;
 // import com.mapbox.mapboxsdk.plugins.locationlayer.LocationLayerPlugin;
 import com.mapbox.mapboxsdk.style.expressions.Expression;
 import com.mapbox.mapboxsdk.style.layers.Layer;
+import com.mapbox.android.gestures.MoveGestureDetector;
 import com.mapbox.rctmgl.components.AbstractMapFeature;
 import com.mapbox.rctmgl.components.annotation.RCTMGLCallout;
 import com.mapbox.rctmgl.components.annotation.RCTMGLCalloutAdapter;
