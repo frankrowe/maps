@@ -423,6 +423,23 @@ public class RCTMGLMapView extends MapView implements
             }
         });
 
+        mMap.addOnMoveListener(new MapboxMap.OnMoveListener() {
+            @Override
+            public void onMoveBegin(MoveGestureDetector detector) {
+                // left empty
+            }
+
+            @Override
+            public void onMove(MoveGestureDetector detector) {
+                handleMapChangedEvent(EventTypes.REGION_IS_CHANGING);
+            }
+
+            @Override
+            public void onMoveEnd(MoveGestureDetector detector) {
+                // left empty
+            }
+        });
+
 
         /*mLocalizationPlugin = new LocalizationPlugin(this, mMap);
         if (mLocalizeLabels) {
